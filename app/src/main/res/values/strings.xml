@@ -13,4 +13,7 @@
     <string name="theme_night">Theme night</string>
     <string name="theme_space">Theme space</string>
     <string name="todo">TODO</string>
+    <string name="help">Help</string>
+    <string name="theme" translatable="false">theme</string>
+
 </resources>

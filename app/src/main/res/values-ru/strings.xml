@@ -12,4 +12,5 @@
     <string name="theme_night">Ночная тема</string>
     <string name="theme_space">Тема космоса</string>
     <string name="todo">TODO</string>
+    <string name="help">Помощь</string>
 </resources>
