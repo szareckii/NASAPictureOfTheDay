@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    style="@style/BackgroundWhite"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
+        android:textSize="@dimen/text_size_big"
+        android:layout_margin="@dimen/margin_top_small"
         android:text="@string/chose_theme"/>
 
         <com.google.android.material.chip.ChipGroup
@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            app:selectionRequired="true"
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
@@ -27,12 +28,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/theme_day" />
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/theme_night" />
 
             <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"

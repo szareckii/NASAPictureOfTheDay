@@ -5,4 +5,11 @@
             android:icon="@drawable/ic_send"
             android:title="@string/about" />
     </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/navigation_help"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/help" />
+    </group>
 </menu>

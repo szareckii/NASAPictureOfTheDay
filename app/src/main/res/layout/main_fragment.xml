@@ -12,18 +12,17 @@ android:layout_height="match_parent">
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp">
+            style="@style/PaddingStartEnd" >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/search_wiki"
                 app:counterEnabled="true"
-                app:counterMaxLength="20"
+                android:padding="10dp"
                 app:endIconCheckable="true"
+                android:textIsSelectable="true"
                 app:endIconDrawable="@drawable/ic_wikipedia"
                 app:endIconMode="custom"
                 app:helperText="@string/wiki_helper_text"
@@ -31,19 +30,19 @@ android:layout_height="match_parent">
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/input_edit_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
 
             <com.szareckii.nasapictureoftheday.util.EquilateralImageView
                 android:id="@+id/image_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:contentDescription="@string/"
+                android:contentDescription="@string/photo_of_the_day_stub"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +82,7 @@ android:layout_height="match_parent">
         android:backgroundTint="@color/colorAccent"
         app:layout_anchor="@id/bottom_app_bar"
         app:srcCompat="@drawable/ic_plus_fab"
-        app:tint="#FFFFFF"
+        app:tint="@color/white"
         android:contentDescription="@string/todo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
